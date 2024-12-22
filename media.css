@@ -1,0 +1,82 @@
+@media (max-width: 576px) {
+    body {
+        background-color: lightgreen !important;
+    }
+
+    h1 {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .container {
+        margin-top: 20px;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .game {
+        display: grid;
+        /* Use grid layout */
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 equal-width columns */
+        width: 30vh;
+        /* Grid width */
+        height: 30vh;
+        /* Grid height */
+    }
+
+    .box {
+        /* Background color for the boxes */
+        height: 18vmin;
+        /* Height of each box */
+        width: 18vmin;
+        /* Width of each box */
+        border-radius: 12px;
+        /* Rounded corners */
+        border: none;
+        display: flex;
+        /* Center content horizontally and vertically */
+        justify-content: center;
+        align-items: center;
+        font-size: 6vmin;
+        color: brown;
+        font-weight: 700;
+    }
+
+    #resetBtn {
+        margin-top: 1rem;
+        padding: 0.75rem;
+        font-size: 1rem;
+        border-radius: 1rem;
+        color: white;
+        background-color: #3e5dba;
+        border: none;
+    }
+
+    #new-game-btn {
+        margin-top: 1rem;
+        padding: 0.75rem;
+        font-size: 1rem;
+        border-radius: 1rem;
+        color: white;
+        background-color: #3e5dba;
+        border: none;
+    }
+
+    .winner-msg {
+        padding: 5px;
+        height: 200vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 6rem;
+    }
+
+    .hide {
+        display: none;
+    }
+
+}
